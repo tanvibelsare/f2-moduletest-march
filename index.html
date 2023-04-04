@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management CRUD</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+      <div class="heading">
+          <h3>Student Management CRUD</h3>
+      </div>
+      <div class="info">
+        <form id="form">
+           <div>
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email" id="email">
+            <input type="text" placeholder="GPA" id="gpa">
+            <input type="text" placeholder="Age" id="age">
+            <input type="text" placeholder="Degree" id="degree"><br>
+            </div>
+           
+           <button  class="btn"id="submit" onclick="AddData()">Add student</button>
+        <button  class="btn"id="update" onclick="AddData()">Edit student</button>
+        </form>
+        <input type="text" id="search" placeholder="Search By Name, email or degree" onkeyup="searchFun()">
+      </div>
+      <div  class="info-2">
+       <table class="table  table-striped" id="crudTable">
+           <thead>
+               <tr>
+                 <!-- <th>Id</th> -->
+                 <th>Student Name</th>
+                 <th>Email</th>
+                 <th>GPA</th>
+                 <th>Age</th>
+                 <th>Degree</th>
+                 <th>Actions</th>
+               </tr>
+           </thead>
+           <tbody></tbody>
+       </table>
+      </div>
+  </div>
+ 
+    <script src="main.js"></script>
+</body>
+</html>
